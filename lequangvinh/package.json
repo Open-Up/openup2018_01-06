@@ -1,0 +1,14 @@
+{
+  "name": "lequangvinh",
+  "version": "1.0.0",
+  "description": "1. Write a `Square` constructor function allows create a new instance which can set edge and calculate area.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
