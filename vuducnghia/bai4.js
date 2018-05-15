@@ -6,7 +6,7 @@ user = [
 function getUsers() {
 
     return new Promise(function (resolve, reject) {
-        setTimeout(function () {
+        setTimeout( ()=> {
             var arID = []
             user.forEach(element => {
                 arID.push(element.id)
@@ -19,7 +19,7 @@ function getUsers() {
 
 function getUserName(userID) {
     return new Promise(function (resolve, reject) {
-        setTimeout(function () {
+        setTimeout( ()=> {
             user.forEach(element => {
                 if (userID == element.id)
                     resolve(element)
@@ -31,16 +31,14 @@ function getUserName(userID) {
 
 function main() {
     var ar = []
-    getUsers().then(function (data) {
+    getUsers().then( (data)=> {
         data.forEach(element => {
-            getUserName(element).then(function (data) {
+            getUserName(element).then( (data)=> {
                 console.log(data)
-            }).catch(function(err){
+            }).catch((err)=>{
                 console.log(err)
             })
         })
     })
-
-    
 }
 main()
