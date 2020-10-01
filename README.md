@@ -1,4 +1,4 @@
-### OpenUp Web development practice
+### easy way to Web development practice
 
 1. Write a `Square` constructor function allows create a new instance which can set edge and calculate area.
 
